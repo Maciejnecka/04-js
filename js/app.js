@@ -407,10 +407,194 @@
 // console.log(!(x === y)); // true
 // bo x === y => false, !false => true
 ///////////////////////////////////////////////////
-const weather = 'deszcz';
-let place;
+// const weather = 'deszcz';
+// let place;
 
-if (weather === 'deszcz') {
-  place = 'home';
-}
-console.log(place);
+// if (weather === 'deszcz') {
+//   place = 'home';
+// }
+// console.log(place);
+
+// const winner = 'ja';
+// let building;
+// if (winner === 'ja') {
+//   building = 'home';
+// } else {
+//   building = 'flat';
+// }
+// console.log(building);
+
+///////////////////////////////////////////////////
+// const userAge = prompt('Ile masz lat?', 0);
+
+// const userAgeInt = parseInt(userAge);
+
+// const isAdult = userAgeInt >= 18;
+
+// if (!isAdult) {
+//   const leftAge = 18 - userAge;
+//   alert('Do pełnoletności brakuje Ci: ' + leftAge);
+// }
+///////////////////////////////////////////////////
+// Wartości fałszywe
+// false (boolean),
+// 0 (number),
+// 0n (BigInt) [zero dla dużych liczb],
+// "",", `` (string) [pusty ciąg znaków],
+// null (object),
+// undefined (undefined),
+// Nan (number).
+///////////////////////////////////////////////////
+
+// let value;
+// value = '';
+// console.log(value);
+// if (value) {
+//   console.log('prawda!');
+// } else {
+//   console.log('fałsz!');
+// }
+
+// // '' => 'fałsz!'
+
+// value = '0';
+// console.log(value);
+// if (value) {
+//   console.log('prawda!');
+// } else {
+//   console.log('fałsz!');
+// }
+
+// '0' => 'prawda!'
+///////////////////////////////////////////////////
+
+// const userAge = prompt('Ile masz lat?', 0);
+// // pobieranie danych od uzytkownika
+
+// const userAgeInt = parseInt(userAge);
+
+// if (userAgeInt >= 18) {
+//   alert('Jesteś pełnoletni! Gratuluje!');
+// }
+///////////////////////////////////////////////////
+// const a = 62;
+// const b = 55;
+// const c = 19;
+
+// if (a > b && a > c) {
+//   // jesli a jest wieksza od b i od c to
+//   console.log('a jest najwieksze!');
+// } else if (b > c) {
+//   // jesli b jest wieksze od c i biorac pod uwage poprzedni warunek tj. ze a nie jest najwieksze to
+//   console.log('b jest najwieksze!');
+// } else {
+//   // w przeciwnym wypadku tj. gdy a i b nie sa najwieksze to
+//   console.log('C jest najwieksze!');
+// }
+///////////////////////////////////////////////////
+// Operator warunkowy
+///////////////////////////////////////////////////
+
+// const a = 1112;
+// const b = 55;
+
+// const info = a > b ? 'A wieksze' : 'B większe';
+// console.log(info); // B wieksze
+
+// const diff = a > b ? a - b : b - a;
+// console.log(diff); // 43 - zawsze nieujemna
+///////////////////////////////////////////////////
+
+// const a = 12;
+// const b = 55;
+
+// const info = a > b ? 'A większe' : 'B większe';
+// console.log(info);
+
+// const diff = a > b ? a - b : b - a;
+// console.log(diff);
+
+// const numsAreEven1 = a % 2 === 0 && b % 2 === 0 ? 'yes' : 'no';
+
+// const numsAreEven2 = !(a % 2) && !(b % 2) ? 'yes' : 'no';
+
+// console.log(numsAreEven1, numsAreEven2);
+///////////////////////////////////////////////////
+// const monthNumber = parseInt(prompt('Podaj numer miesiaca:', 0));
+// let monthName;
+
+// if (monthNumber === 1) {
+//   alert('Styczeń');
+// } else if (monthNumber === 2) {
+//   alert('Luty');
+// }
+// switch (monthNumber) {
+//   case 1:
+//     monthName = 'Styczeń';
+//     break;1
+//   case 2:
+//     monthName = 'Luty';
+//     break;
+//   case 3:
+//     monthName = 'Marzec';
+//     break;
+//   // ...
+//   default:
+//     alert('Podano błędne dane!');
+//     break;
+// }
+
+// console.log(monthName);
+///////////////////////////////////////////////////
+// for (let i = 0; i <= 13; i++) {
+//   console.log(i);
+// }
+
+// for (let i = 4; i > 0; i--) {
+//   console.log(i);
+// }
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 5 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 3 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// for (let i = 3; i <= 100; i = i + 3) {
+//   console.log(i);
+// }
+///////////////////////////////////////////////////
+// const randomNumber = Math.round(Math.random() * 5);
+// // losuje liczbe 0 / 5
+
+// let userNumber;
+// // deklaruje zmienna, która bedzie przechowywac liczbe wprowadzona przez uzytkownika
+
+// let counter = 0;
+// // liczba wykonywanych prób
+
+// // wykonuj pętle dopki wylosowana liczba bedzie rozna od tej wprowadzonej przez uzytkownika
+// while (userNumber !== randomNumber) {
+//   userNumber = parseInt(prompt('Zgadnij liczbe!'));
+//   counter++; // lub counter ++
+// }
+
+// alert('Gratulacje! Zgadłes za ' + counter + ' razem!');
+// let i = 3;
+// while (i <= 100) {
+//   console.log(i);
+//   i += 3;
+// }
+
+// let j = 1;
+// while (j <= 100) {
+//   if (j % 3 === 0) {
+//     console.log(j);
+//   }
+//   j++;
+// }
