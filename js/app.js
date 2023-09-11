@@ -598,3 +598,9 @@
 //   }
 //   j++;
 // }
+
+function showInfo() {
+  console.log('Funckje');
+  console.log('są');
+  console.log('fajne');
+}
