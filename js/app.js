@@ -362,15 +362,15 @@
 
 // w przypadku tzw. scislego (strict) porownania tj. uzycia === typ wartosci musi sie zgadzac jesli tak nie jest juz mamy falsz
 
-console.log(111 < 231); // true
-console.log(1 < 5); // true
-console.log(1 <= 1); // true
+// console.log(111 < 231); // true
+// console.log(1 < 5); // true
+// console.log(1 <= 1); // true
 
-console.log('a' > 'b'); //false
-// a => 97, b => 98
-console.log('ń' > 'z'); // true
-// ń => 324, z => 122
-console.log('a' > 'A'); // true
+// console.log('a' > 'b'); //false
+// // a => 97, b => 98
+// console.log('ń' > 'z'); // true
+// // ń => 324, z => 122
+// console.log('a' > 'A'); // true
 // a => 97, A => 65
 
 ///////////////////////////////////////////////////
@@ -406,3 +406,11 @@ console.log('a' > 'A'); // true
 
 // console.log(!(x === y)); // true
 // bo x === y => false, !false => true
+///////////////////////////////////////////////////
+const weather = 'deszcz';
+let place;
+
+if (weather === 'deszcz') {
+  place = 'home';
+}
+console.log(place);
