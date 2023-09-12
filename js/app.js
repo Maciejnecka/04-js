@@ -676,3 +676,93 @@
 
 // showEvenNumbers(1, 10);
 ///////////////////////////////////////////////////
+
+// function getUserInput(messageForUser) {
+//   const userInput = prompt(messageForUser);
+//   return userInput;
+// }
+
+// const fn = getUserInput;
+
+// const inputFromUser = fn('Ile masz lat?');
+// console.log(inputFromUser);
+
+///////////////////////////////////////////////////
+
+// const fn = function getUserInput(messageForUser) {
+//   const userInput = prompt(messageForUser);
+//   return userInput;
+// };
+
+// const inputFromUser = fn('Ile masz lat??33');
+// console.log(inputFromUser);
+///////////////////////////////////////////////////
+// const getUserInput = function (message) {
+//   return prompt(message);
+// };
+
+// const sumNumbersFromUser = function (userInputFn) {
+//   const a = userInputFn('Podaj liczbę a');
+//   const b = userInputFn('Podaj liczbę b');
+
+//   const sum = parseFloat(a) + parseFloat(b);
+//   return sum;
+// };
+
+// const result = sumNumbersFromUser(getUserInput);
+// console.log(result);
+///////////////////////////////////////////////////
+
+// const sumNumbersFromUser = function (userInputFn) {
+//   const a = userInputFn('Podaj liczbę a');
+//   const b = userInputFn('Podaj liczbę b');
+
+//   const sum = parseFloat(a) + parseFloat(b);
+//   return sum;
+// };
+
+// const result = sumNumbersFromUser(function (message) {
+//   return prompt(message);
+// });
+// console.log(result);
+///////////////////////////////////////////////////
+
+// function showMessage() {
+//   console.log('setTimeout!');
+// }
+
+// const showName = function () {
+//   console.log('Michał!');
+// };
+
+// setTimeout(showMessage, 1000);
+// setTimeout(showName, 2000);
+
+// setTimeout(function () {
+//   console.log('funkcja anonimowa!');
+// }, 5000);
+///////////////////////////////////////////////////
+// let counter = 1;
+
+// const showCounter = function () {
+//   console.log(counter);
+//   counter++;
+// };
+
+// console.log('before setInterval()');
+// setInterval(showCounter, 1000);
+// console.log('after setInterval()');
+///////////////////////////////////////////////////
+// let idInterval;
+// let counter = 1;
+
+// const showCounter = function () {
+//   console.log(counter);
+//   counter++;
+
+//   if (counter > 5) {
+//     clearInterval(idInterval);
+//   }
+// };
+
+// idInterval = setInterval(showCounter, 1000);
