@@ -766,3 +766,218 @@
 // };
 
 // idInterval = setInterval(showCounter, 1000);
+///////////////////////////////////////////////////
+// Deklaracja zmiennych globalncyh
+// var fistName = 'Ewa';
+// const num = 12;
+// let counter = 1;
+
+// function fn(param1, param2) {
+//   // Parametry funkcji sa zmiennymi lokalnymi
+//   var firstNameLocal = 'Anna';
+//   const numLocal = 12;
+//   let counterLocal = 2;
+// }
+// {
+//   // deklaracja zmiennej globalnej
+//   var firstNameBlock = 'Kasia';
+//   // deklaracja zmiennych lokalnych
+//   const numBlock = 3;
+//   let counterBlock = 12;
+// }
+///////////////////////////////////////////////////
+// zmienna globalna
+// const num = 12;
+// console.log(num);
+
+// function fn() {
+//   //zmienna lokalna
+//   const num = 44;
+//   console.log(num);
+// }
+// fn();
+// console.log(num);
+///////////////////////////////////////////////////
+// const num = getNum();
+// console.log(num);
+
+// function getNum() {
+//   return 2;
+// }
+// // deklaracja zostala przeniesiona na gore, ale bez wartosci wiec mamy undefined
+// console.log(firstName);
+
+// var firstName = 'Anna';
+///////////////////////////////////////////////////
+// const userA = prompt('Podaj a...');
+// const userB = prompt('Podaj b...');
+// const userC = prompt('Podaj c...');
+// // poniewaz działa hoisting to moge uruchomic ponizsze funckje
+// const sum = getSum(userA, userB, userC);
+// const avg = getAverage(sum, 3);
+// console.log(avg);
+
+// function getSum(a, b, c) {
+//   let sum = parseInt(a);
+//   sum += parseInt(b);
+//   sum += parseInt(c);
+//   return sum;
+// }
+// function getAverage(sum, count) {
+//   if (count === 0) {
+//     return 0;
+//   }
+//   return sum / count;
+// }
+///////////////////////////////////////////////////
+// console.log(firstName);
+
+// // deklaracja zmiennej
+// var firstName = 'Anna';
+// console.log(firstName);
+
+// showInfo();
+
+// // ta sama zasada dotyczy wyrazen
+// var showInfo = function () {
+//   console.log('Hoisting!');
+// };
+///////////////////////////////////////////////////
+// deklaracja zmiennych (globalncyh)
+// let state;
+
+// function fn(c) {
+//   // zmienne lokalne
+//   const a = 3;
+//   const b = 4;
+// }
+
+// console.log(hoisting);
+// const hoisting = '??';
+///////////////////////////////////////////////////
+// const arr = [];
+// // deklaracja pustej tablicy
+
+// const names = ['Jan', 'Anna', 'Kasia'];
+// // deklaracja 3 elementowej tablicy
+
+// console.log(names[0]); //jan
+// // pierwsza wartosc elementu
+
+// console.log(names.length); //3
+// // pobieranie ilosci elementow
+
+// const lastIndex = names.length - 1;
+// console.log(names[lastIndex]);
+///////////////////////////////////////////////////
+// const arr = new Array(0);
+// // deklaracja pustej tablicy
+
+// const names = new Array('Jan', 'Anna', 'Kasia');
+// // deklaruje 3 elementowa tablice
+// console.log(names[0]);
+// // pobieram wartosc pierwszego elementu
+
+// console.log(names.length);
+// pobieram ilosc elementow
+///////////////////////////////////////////////////
+// const numbers = [];
+// // deklaracja pustej tablicy
+// const names = new Array();
+// // deklaruje pusta tablice
+// console.log(numbers, names);
+
+// numbers.push(1, 2, 3);
+
+// names.push('Jan');
+// // dodaje 1 element typu [string]
+// console.log(numbers, names);
+
+// console.log(numbers.length, names.length);
+///////////////////////////////////////////////////
+// const names = ['Jan', 'Anna', 'Kasia'];
+
+// if (names.indexOf('Jan') > -1) {
+//   console.log('Istnieje w tablicy!');
+// } else {
+//   console.log('Brak w tablicy');
+// }
+
+// if (names.includes('Kasia')) {
+//   console.log('Istnieje w tablicy!');
+// } else {
+//   console.log('Brak w tablicy!');
+// }
+///////////////////////////////////////////////////
+// deklarujemy zmienna, ktora bedzie przechowywac nasze wylosowane liczny
+// const numbers = [];
+// // tworzymy petle ktora bedzie sie wykonywac dopoki ilosc elementow w tablicy jest mniejsza niz 5
+// while (numbers.length < 5) {
+//   // losujemy liczbe [1]
+//   const num = Math.round(Math.random() * 10);
+//   //sprawdzamy czy wylosowana liczba znajduje sie w taliby [2]
+//   if (!numbers.includes(num)) {
+//     // nic nie rob, czyli ponowne losowanie [2a]
+//     numbers.push(num);
+//   }
+// }
+// console.log(numbers);
+///////////////////////////////////////////////////
+// const numbers = [111, 12, 2, 1, 201];
+
+// numbers.sort(function (a, b) {
+//   return a - b;
+// });
+
+// console.log(numbers);
+
+// numbers.sort(function (a, b) {
+//   return b - a;
+// });
+// console.log(numbers);
+///////////////////////////////////////////////////
+// const numbers = [1, 2, 3, 4, 5];
+// // wiświetlanei danych w konsoli
+// for (let i = 0; i < numbers.length; i++) {
+//   console.log(numbers[i]);
+// }
+
+// // obliczanie sumy na podstawie liczb z tablicy
+// let sum = 0;
+// for (let j = 0; j < numbers.length; j++) {
+//   sum += numbers[j];
+// }
+// console.log(sum);
+///////////////////////////////////////////////////
+// const numbers = [1, 2, 3, 4, 5];
+// const sum = getSum(numbers);
+// console.log(sum);
+
+// function getSum(arr) {
+//   let sum = 0;
+//   for (let j = 0; j < arr.length; j++) {
+//     sum += arr[j];
+//   }
+//   return sum;
+// }
+///////////////////////////////////////////////////
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = getEvenNumbers(numbers);
+const sum = getSum(evenNumbers);
+console.log(sum);
+
+function getEvenNumbers(arr) {
+  const evenNumbers = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      evenNumbers.push(arr[i]);
+    }
+  }
+  return evenNumbers;
+}
+function getSum(arr) {
+  let sum = 0;
+  for (let j = 0; j < arr.length; j++) {
+    sum += arr[j];
+  }
+}
