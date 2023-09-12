@@ -599,8 +599,80 @@
 //   j++;
 // }
 
-function showInfo() {
-  console.log('Funckje');
-  console.log('są');
-  console.log('fajne');
-}
+// function showInfo() {
+//   console.log('Funckje');
+//   console.log('są');
+//   console.log('fajne');
+// }
+///////////////////////////////////////////////////
+// function showInfo(text) {
+//   console.log(text);
+// }
+// showInfo('Funkcje');
+// showInfo('są');
+// showInfo('super');
+
+// function sumNumbers() {
+//   const a = 2;
+//   const b = 4;
+//   console.log(a + b);
+// }
+
+// sumNumbers();
+
+// function sum(a, b) {
+//   console.log(a + b);
+// }
+
+// sum(4, 5);
+// sum(11, 44);
+///////////////////////////////////////////////////
+// function sum(a, b) {
+//   const result = a + b;
+//   return result;
+// }
+
+// const res1 = sum(4, 5);
+// const res2 = sum(11, 44);
+// console.log(res1, res2);
+///////////////////////////////////////////////////
+// function isEven(num) {
+//   if (num % 2 === 0) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// function showEvenNumbers(start, stop) {
+//   for (let i = start; i < stop; i++) {
+//     if (isEven(i)) {
+//       console.log(i + ' jest parzysta!');
+//     }
+//   }
+// }
+
+// showEvenNumbers(1, 10);
+
+// function isEven(num) {
+//   console.log('>>> uruchomione: isEven()');
+//   console.log('>>> num =', num);
+//   if (num % 2 === 0) {
+//     console.log('>>> warunek prawdziwy :)');
+//     return true;
+//   }
+//   console.log('>>> warunek fałszywy :(');
+//   return false;
+// }
+// function showEvenNumbers(start, stop) {
+//   console.log('> uruchomione: showEvenNumbers()');
+//   console.log('> start =', start, 'stop =', stop);
+//   for (let i = start; i < stop; i++) {
+//     console.log('=> pętla for, i = ', i);
+//     if (isEven(i)) {
+//       console.log(i + ' jest parzysta!');
+//     }
+//   }
+// }
+
+// showEvenNumbers(1, 10);
+///////////////////////////////////////////////////
