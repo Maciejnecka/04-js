@@ -1175,3 +1175,15 @@
 // console.log(pow);
 
 // console.log(Math.pow(a, n));
+const product = {
+  name: 'Podstawy JS',
+  type: 'book',
+  price: {
+    value: 49,
+  },
+};
+
+const keys = Object.keys(product);
+const values = Object.values(product);
+
+console.log(keys, values);
