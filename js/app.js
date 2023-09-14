@@ -960,24 +960,76 @@
 //   }
 //   return sum;
 // }
-///////////////////////////////////////////////////
-const numbers = [1, 2, 3, 4, 5];
-const evenNumbers = getEvenNumbers(numbers);
-const sum = getSum(evenNumbers);
-console.log(sum);
+// ///////////////////////////////////////////////////
+// const numbers = [1, 2, 3, 4, 5];
+// const evenNumbers = getEvenNumbers(numbers);
+// const sum = getSum(evenNumbers);
+// console.log(sum);
 
-function getEvenNumbers(arr) {
-  const evenNumbers = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) {
-      evenNumbers.push(arr[i]);
-    }
-  }
-  return evenNumbers;
-}
-function getSum(arr) {
-  let sum = 0;
-  for (let j = 0; j < arr.length; j++) {
-    sum += arr[j];
-  }
-}
+// function getEvenNumbers(arr) {
+//   const evenNumbers = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//       evenNumbers.push(arr[i]);
+//     }
+//   }
+//   return evenNumbers;
+// }
+// function getSum(arr) {
+//   let sum = 0;
+//   for (let j = 0; j < arr.length; j++) {
+//     sum += arr[j];
+//   }
+// }
+///////////////////////////////////////////////////
+// const numbers = [1, 2, 3, 4, 5];
+
+// numbers.forEach(function (element, index, array) {
+//   console.log(element);
+// });
+
+// function showItemWithIndex(item, index) {
+//   console.log(index, '=>', item);
+// }
+// numbers.forEach(showItemWithIndex);
+// const numbers = [1, 2, 3, 4, 5];
+// const sum = getSum(numbers);
+// console.log(sum);
+
+// function getSum(arr) {
+//   let sum = 0;
+//   arr.forEach(function (num) {
+//     sum += num;
+//   });
+//   return sum;
+// }
+///////////////////////////////////////////////////
+// const numbers = [1.12, 2.13, 3.12, 4.61, 5.32];
+// const integers = numbers.map(parseNumbersToInt);
+// console.log(integers);
+
+// function parseNumbersToInt(element, index, array) {
+//   return parseInt(element);
+// }
+
+// const evenNumbers = integers.map(isEven);
+// console.log(evenNumbers);
+
+// function isEven(element) {
+//   return element % 2 === 0;
+// }
+///////////////////////////////////////////////////
+const arr = [];
+const alfa = ['aaa', 'bbcccc', 'cccc'];
+
+const cart = [
+  ['skarpetki', 3, 4.9],
+  ['długopis', 4, 3, 3.9],
+  ['zeszyt', 2, 5.9],
+];
+
+const newCart = cart.filter(function (product) {
+  return product[0] !== 'długopis';
+});
+
+console.log(newCart);
