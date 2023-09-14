@@ -1019,17 +1019,159 @@
 //   return element % 2 === 0;
 // }
 ///////////////////////////////////////////////////
-const arr = [];
-const alfa = ['aaa', 'bbcccc', 'cccc'];
+// const arr = [];
+// const alfa = ['aaa', 'bbcccc', 'cccc'];
 
-const cart = [
-  ['skarpetki', 3, 4.9],
-  ['długopis', 4, 3, 3.9],
-  ['zeszyt', 2, 5.9],
-];
+// const cart = [
+//   ['skarpetki', 3, 4.9],
+//   ['długopis', 4, 3, 3.9],
+//   ['zeszyt', 2, 5.9],
+// ];
 
-const newCart = cart.filter(function (product) {
-  return product[0] !== 'długopis';
-});
+// const newCart = cart.filter(function (product) {
+//   return product[0] !== 'długopis';
+// });
 
-console.log(newCart);
+// console.log(newCart);
+///////////////////////////////////////////////////
+// const car = {
+//   color: 'red',
+//   mileage: 1203,
+//   horsepower: 540,
+//   seatsNumber: 2,
+//   getColor: function () {
+//     return this.color;
+//   },
+// };
+// car.getSeatsNumber = function () {
+//   return this.seatsNumber;
+// };
+
+// console.log(car.getColor(), car.getSeatsNumber());
+
+// car.color = 'blue';
+// zmieniam wartosc dla wlasciwosci color
+// const hp = car.horsepower;
+// przypisuje wartosc z wlasciwosci
+// console.log(hp);
+///////////////////////////////////////////////////
+// function showInfo() {
+//   console.log(this.text);
+//   function changeContext() {
+//     console.log(this.text);
+//   }
+//   changeContext(); // undefined
+// }
+
+// const notice = {
+//   text: 'Notice!',
+//   showText: showInfo,
+// };
+
+// const error = {
+//   text: 'Error!',
+//   showText: showInfo,
+// };
+
+// notice.showText();
+// error.showText();
+///////////////////////////////////////////////////
+// let a = 12;
+// let b = a;
+// console.log(b);
+// b = 14;
+// console.log(a, b);
+
+// let objA = { num: 12 };
+// let objB = objA;
+// console.log(objB.num);
+// objB.num = 14;
+// console.log(objA.num, objB.num);
+///////////////////////////////////////////////////
+// const user = {
+//   firstName: 'Alicja',
+//   lastName: 'Nowak',
+//   age: 24,
+// };
+
+// for (const key in user) {
+//   console.log(key);
+// }
+
+// for (const key in user) {
+//   console.log(user[key]);
+// }
+
+// console.log(user.firstName, user['firstName']);
+
+// const propName = 'firstName';
+// console.log(user[propName]);
+///////////////////////////////////////////////////
+// const travelPrice = {
+//   flight: 591,
+//   hotel: 1400,
+//   excursions: 421,
+//   other: 120,
+// };
+
+// const totalPrice = getTotalPrice(travelPrice);
+// console.log(totalPrice);
+
+// function getTotalPrice(priceObject) {
+//   const values = Object.values(priceObject);
+//   const totalPrice = values.reduce(function (acc, price) {
+//     return acc + price;
+//   }, 0);
+//   return totalPrice;
+// }
+
+// function getTotalPrice(priceObj) {
+//   let totalPrice = 0;
+//   for (const costName in priceObj) {
+//     totalPrice += priceObj[costName];
+//   }
+//   return totalPrice;
+// }
+///////////////////////////////////////////////////
+// const now = new Date();
+
+// console.log(
+//   now.getFullYear(),
+//   now.getMonth(),
+//   now.getHours(),
+//   now.getMinutes(),
+//   now.getSeconds()
+// );
+///////////////////////////////////////////////////
+// setInterval(function () {
+//   const now = new Date();
+//   const time = getTime(now);
+
+//   document.title = time;
+//   console.clear();
+//   console.log(time);
+// }, 1000);
+
+// function getTime(date) {
+//   let time = startWithZero(date.getHours());
+//   time += ':' + startWithZero(date.getMinutes());
+//   time += ':' + startWithZero(date.getSeconds());
+
+//   return time;
+// }
+
+// function startWithZero(num) {
+//   return (num < 10 ? '0' : '') + num;
+// }
+///////////////////////////////////////////////////
+// const a = 2;
+// const n = 3;
+
+// let pow = 1;
+// for (let i = 1; i <= n; i++) {
+//   pow *= a;
+// }
+
+// console.log(pow);
+
+// console.log(Math.pow(a, n));
