@@ -1175,15 +1175,37 @@
 // console.log(pow);
 
 // console.log(Math.pow(a, n));
-const product = {
-  name: 'Podstawy JS',
-  type: 'book',
-  price: {
-    value: 49,
-  },
-};
+// const product = {
+//   name: 'Podstawy JS',
+//   type: 'book',
+//   price: {
+//     value: 49,
+//   },
+// };
 
-const keys = Object.keys(product);
-const values = Object.values(product);
+// const keys = Object.keys(product);
+// const values = Object.values(product);
 
-console.log(keys, values);
+// console.log(keys, values);
+
+const studentsNum = parseInt(prompt('Liczba uczniów?'));
+const studentList = [];
+for (let i = 0; i < studentsNum; i++) {
+  const firstName = prompt('Podaj imię (' + i + ')');
+  const lastName = prompt('Podaj nazwisko (' + i + ')');
+
+  const newStudent = new studentList(firstName, lastName);
+  studentList.push(newStudent);
+}
+
+studentList.forEach(function (item) {
+  item.showFullName();
+});
+
+function Student(initFirstName, initLastName) {
+  this.firstName = initFirstName;
+  this.lastName = initLastName;
+  this.showFullName = function () {
+    console.log(this.firstName, this.lastName);
+  };
+}
